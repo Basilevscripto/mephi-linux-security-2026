@@ -1,0 +1,6 @@
+   1376     0  1000 root     obi      fusermount3
+   3664     0  1234 root     user1    fusermount3
+   4252     0  1234 root     user1    passwd
+   4574     0  1000 root     obi      sudo
+   4584     0  1000 root     obi      sudo
+   4741     0  1000 root     obi      passwd

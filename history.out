@@ -1,0 +1,69 @@
+    1  groapadd sudents
+    2  groupadd sudents
+    3  user -u 1234 -G students -m user1
+    4  sudo user -u 1234 -G students -m user1
+    5  useradd -u 1234 -G students -m user1
+    6  groupadd sudents
+    7  sudo groupadd sudents
+    8  sudo getent group studens
+    9  mc
+   10  getent group
+   11  groupdel sudents 
+   12  exit
+   13  groupadd students
+   14  useradd  -u 1234 -G students -m user1
+   15  passwd user1 
+   16  chage -M 90 user1 
+   17  chage -1 user1 
+   18  chage -l user1 
+   19  mc
+   20  find / -perm -4000 -type f 2>/dev/null > ~/suid_files.out
+   21  cat ~/suid_files.out
+   22  ps ~eo pid,euid,ruid,user,ruser,comm | awk `$2==0 && $3>=-1000 {print}
+   23  ps ~eo pid,euid,ruid,user,ruser,comm | awk `$2==0 && $3>=-1000
+   24  cat ~/proc_monitor.out
+   25  cat ~/proc_monitor.out
+   26  ps ~eo pid,euid,ruid,user,ruser,comm | awk `$2==0 && $3>=-1000 {print}
+   27  cat ~/proc_monitor.out
+   28  ps ~eo pid,euid,ruid,user,ruser,comm | awk `$2==0 && $3>=-1000 {print}
+   29  cat ~/proc_monitor.out
+   30  ps ~eo pid, euid, ruid, user, ruser, comm | awk `$2==0 && $3>=-1000 {print}
+   31  cat ~/proc_monitor.out
+   32  ps ~eo pid, euid, ruid, user, ruser, comm | awk `$2==0 && $3>=-1000 {print}
+   33  cat ~/proc_monitor.out
+   34  ps ~eo pid,euid,ruid,user,ruser,comm | awk `$2==0 && $3>=-1000 
+   35  cat ~/proc_monitor.out
+   36  exit
+   37  ps ~eo pid,euid,ruid,user,ruser,comm | awk `$2==0 && $3>=-1000 
+   38  ps ~eo pid,euid,ruid,user,ruser,comm | awk `$2==0 && $3>=-1000` >/proc_monitor.out 
+   39  ps ~eo pid,euid,ruid,user,ruser,comm
+   40  ps --no-headers -eo pid,euid,ruid,user,ruser,comm | awk `$2==0 && $3>=-1000` >/proc_monitor.out 
+   41  ps -eo pid,euid,ruid,user,ruser,comm |awk 
+   42  ps --no-headers -eo pid,euid,ruid,user,ruser,comm | awk '$2==0 && $3>=-1000' >/proc_monitor.out 
+   43  cat ~/proc_monitor.out
+   44  ps --no-headers -eo pid,euid,ruid,user,ruser,comm | awk '$2==0 && $3>=-1000' >/proc_monitor.out 
+   45  cat ~/proc_monitor.out
+   46  setenforce 0
+   47  cp /usr/bin/cat ~/my_cat
+   48  chown root: ~/my_cat
+   49  chmod u+s ~/_cat
+   50  passwd root
+   51  chmod u+s ~/_cat
+   52  setenforce 0
+   53  cp /usr/bin/cat ~/my_cat
+   54  chown root:root ~/my_cat
+   55  chmod u+s ~/_cat
+   56  chmod u+s ~/my_cat
+   57  ls -l ~/my_cat 
+   58  restorecon -v ~/my_cat 
+   59  exit
+   60  setenforce 0
+   61  cp /usr/bin/cat ~/my_cat
+   62  chown root:root ~/my_cat
+   63  chmod u+s ~/my_cat
+   64  ls -l ~/my_cat 
+   65  restorecon -v ~/my_cat 
+   66  su - user1
+   67  echo "Мой уникальный номер: M265238"
+   68  histori > ~/histori.out
+   69  history > ~/history.out
