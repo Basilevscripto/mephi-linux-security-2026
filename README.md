@@ -7,3 +7,4 @@
 | 5 | sudo для user1: timedatectl set-time | sudoers.out, sudoers_user1.out |
 | 6 | Скриншот и история команд | mephi-screenshot.png, history.out |
 ОС: РЕД ОС, SELinux переведенив режим permissive для выполнения пунктов 3 и 4.
+# mephi-linux-security-2026-
