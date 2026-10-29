@@ -310,3 +310,27 @@
   310  echo "Hellow from Student: M265238" > /mephi-web/index.html
   311  curl http://localhost/ > ~/curl.out
   312  history > ~/history.out
+  313  cp /etc/passwd ~/passwd
+  314  cp /etc/shadow ~/sadow
+  315  cp /etc/group ~/group
+  316  cp /etc/fstab ~/fstab
+  317  cp /etc/security/pwquality.conf ~/pwquality.conf
+  318  cd ~
+  319  git init
+  320  git config user.name Basilevscripto
+  321  git config user.email kavelinmsb@gmail.com
+  322  git add mephi-screenshot1.png history.out ping.outdnf.out stat.out journalctl.out getcap.out getenforce.out curl.out passwd shadow group fstab pwquality.conf 
+  323  cat ~/curl.out 
+  324  ~exit
+  325  systemctl status nginx.service 
+  326  systemctl status httpd
+  327  curl http://localhost/
+  328  mc
+  329  exit
+  330  git add mephi-screenshot1.png history.out ping.outdnf.out stat.out journalctl.out getcap.out getenforce.out curl.out passwd shadow group fstab pwquality.conf 
+  331  git add mephi-screenshot1.png history.out ping.out dnf.out stat.out journalctl.out getcap.out getenforce.out curl.out passwd shadow group fstab pwquality.conf 
+  332  dnf history > ~/dnf.out
+  333  git add mephi-screenshot1.png history.out ping.out dnf.out stat.out journalctl.out getcap.out getenforce.out curl.out passwd shadow group fstab pwquality.conf 
+  334  git add mephi-screenshot1.png history.out ping.out dnf.out stat.out journalctl.out getcap.out getenforce.out curl.out passwd group fstab pwquality.conf 
+  335  git commit -m "Initial commit: MEPHI session project 2026"
+  336  history > ~/history.out
