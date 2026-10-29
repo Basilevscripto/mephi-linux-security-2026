@@ -57,13 +57,256 @@
    57  ls -l ~/my_cat 
    58  restorecon -v ~/my_cat 
    59  exit
-   60  setenforce 0
-   61  cp /usr/bin/cat ~/my_cat
-   62  chown root:root ~/my_cat
-   63  chmod u+s ~/my_cat
-   64  ls -l ~/my_cat 
-   65  restorecon -v ~/my_cat 
-   66  su - user1
-   67  echo "Мой уникальный номер: M265238"
-   68  histori > ~/histori.out
-   69  history > ~/history.out
+   60  cp /root/my_cat /home/user1/my_cat
+   61  chown root:root /home/user1/my_cat
+   62  chmod u+s /home/user1/my_cat
+   63  ls -l /home/user1/my_cat 
+   64  su - user1
+   65  dnf install -y libcap
+   66  cp /usr/bin/chown ~/my_chown
+   67  setcap cap_chown+ep ~/my_chown
+   68  getcap ~/my_chown
+   69  ls -l ~/my_chown
+   70  su - user1
+   71  restorecon -v ~/my_chown
+   72  su - user1
+   73  cp /root/my_chown /home/user1/
+   74  chown root:root /home/user1/my_chown 
+   75  setcap cap_chown+ep /home/user1/my_chown 
+   76  getcap /home/user1//my_chown 
+   77  su - user1
+   78  setenforce 0
+   79  setenforce 
+   80  setenforce 1
+   81  su - user1
+   82  ausearch -m avc -tc recent
+   83  echo 'user1 ALL=(root) /usr/bin/timedatatectl set-time *' | sudo tee /etc/sudoers.d/user1
+   84  chmod 440 /etc/sudoers.d/user1 
+   85  visudo -c -f /etc/sudoers.d/user1 
+   86  su - user1
+   87  su - user1 
+   88  /usr/bin/timedatectl set-time "12:00:00"
+   89  exit
+   90  setenforce 0
+   91  cp /usr/bin/cat ~/my_cat
+   92  chown root:root ~/my_cat
+   93  chmod u+s ~/my_cat
+   94  ls -l ~/my_cat 
+   95  restorecon -v ~/my_cat 
+   96  su - user1
+   97  echo "Мой уникальный номер: M265238"
+   98  histori > ~/histori.out
+   99  history > ~/history.out
+  100  stat /home//user1 > ~/stat.out
+  101  stat ~/my_cat >> ~/stat.out
+  102  stat ~/my_chown >> ~/stat.out
+  103  getcap ~/my_cat  > ~/getcap.out
+  104  getcap ~/my_chown >> ~/getcap.out
+  105  cp /etc/passwd ~/passwd.out
+  106  cp /etc/shadow ~/shadow.out
+  107  cp /etc/group ~/group.out
+  108  cp /etc/sudoers ~/sudoers.out
+  109  cp /etc/sudoers.d//user1 ~/sudoers_user1.out 
+  110  getenforce
+  111  setenforce 1
+  112  cd ~
+  113  git init
+  114  git add mephi-screenshot.png history.out stat.out getcap.out suid_files.out proc_monitor.out passwd.out shadow.out group.out sudoers.out sudoers_user1.out 
+  115  git add history.out stat.out getcap.out suid_files.out proc_monitor.out passwd.out shadow.out group.out sudoers.out sudoers_user1.out 
+  116  git add history.out stat.out getcap.out suid_files.out passwd.out shadow.out group.out sudoers.out sudoers_user1.out 
+  117  find . -name "proc_monitor.out" 
+  118  exit
+  119  su - user1 
+  120  mc
+  121  exit
+  122  mc
+  123  exit
+  124  mc
+  125  exit
+  126  git add mephi-screenshot.png history.out stat.out getcap.out suid_files.out proc_monitor.out passwd.out shadow.out group.out sudoers.out sudoers_user1.out 
+  127  mc
+  128  git add history.out stat.out getcap.out suid_files.out proc_monitor.out passwd.out shadow.out group.out sudoers.out sudoers_user1.out 
+  129  find . -name "mephi-screenshot.png.png" 
+  130  cmod 777 /root/mephi-screenshot.png.png 
+  131  cmod /root/mephi-screenshot.png.png 
+  132  ls -l /root/mephi-screenshot.png.png 
+  133  cmod g+r /root/mephi-screenshot.png.png 
+  134  chmod g+r /root/mephi-screenshot.png.png 
+  135  mc
+  136  mv /root/mephi-screenshot.png.png /root/mephi-screenshot.png
+  137  mc
+  138  git add mephi-screenshot.png history.out stat.out getcap.out suid_files.out proc_monitor.out passwd.out shadow.out group.out sudoers.out sudoers_user1.out 
+  139  cat>README.md<<'EOF'
+  140  cp /home/obi/README.md /root
+  141  git add README.md 
+  142  git commit -m "Add MEPHI homework 2026 files"
+  143  git config --global user.email "kavelinmsb@gmail.com"
+  144  git config --global user.name "Basilevscripto"
+  145  git commit -m "Add MEPHI homework 2026 files"
+  146  git branch -M main
+  147  git remote add origin https://github.com/Basilevscripto/mephi-linux-security-2026.git
+  148  git push -u origin main
+  149  git config --global user.email "Basilevscripto@github.com"
+  150  git push -u origin main
+  151  git init
+  152  git remote add origin https://github.com/Basilevscripto/mephi-linux-security-2026-.git
+  153  git push -u origin main
+  154  ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519
+  155  cat ~/.ssh/id_ed25519.pub
+  156  mc
+  157  exit
+  158  git remote set-url origin git@github.com:Basilevscripto/mephi-linux-security-2026.git
+  159  ssh -T git@github.com
+  160  git push -u original main
+  161  git remote set-url origin git@github.com:Basilevscripto/mephi-linux-security-2026.git
+  162  git push -u original main
+  163  git remote add origin git@github.com:Basilevscripto/mephi-linux-security-2026-.git
+  164  git config --global user.email "Basilevscripto.com"
+  165  git commit -m "Add MEPHI homework 2026 files"
+  166  git config --global user.name "Basilevscripto"
+  167  git commit -m "Add MEPHI homework 2026 files"
+  168  git branch -M main
+  169  git remote add origin git@github.com:Basilevscripto/mephi-linux-security-2026-.git
+  170  git push -u origin main
+  171  ssh -T git@github.com
+  172  git pull
+  173  git push
+  174  git push -u origin main
+  175  echo "# mephi-linux-security-2026-" >> README.md
+  176  git init
+  177  git commit -m "first commit"
+  178  git branch -M main
+  179  git remote add origin git@github.com:Basilevscripto/mephi-linux-security-2026-.git
+  180  git push -u origin main
+  181  git remote set-url origin https://<username>:<TOKEN>@github.com/Basilevscripto/mephi-linux-security-2026.git
+  182  git remote set-url origin git@github.com:Basilevscripto/mephi-linux-security-2026.git
+  183  git remote add origin git@github.com:Basilevscripto/mephi-linux-security-2026-.git
+  184  git branch -M main
+  185  git push -u origin main
+  186  cd mephi-linux-security-2026
+  187  rm -rf mephi-linux-security-2026
+  188  cd ~
+  189  git init 
+  190  git add mephi-screenshot.png histori.out stat.out getcap.out suid_files.out proc_monitor.out passwd.out shadow.out group.out sudoers.out sudoers_user1.out README.md 
+  191  git commit -m "Add MEPHI homework 2026 files"
+  192  git branch -M main 
+  193  git remote add origin https://github.com/Basilevscripto/mephi-linux-security-2026-.git
+  194  git remote -v
+  195  git push -u origin main
+  196  git remote remove origin
+  197  git remote -v
+  198  git remote add origin https://github.com/Basilevscripto/mephi-linux-security-2026-.git
+  199  git push -u origin main
+  200  git remote set-url origin https://github.com/Basilevscripto/mephi-linux-security-2026.git
+  201  git remote -v
+  202  git push -u origin main
+  203  ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519
+  204  mc
+  205  git remote set-url origin git@github.com:Basilevscripto/mephi-linux-security-2026.git
+  206  ssh -T git@github.com
+  207  ssh-keygen -t ed25520 -f ~/.ssh/id_ed25520
+  208  ssh-keygen -t ed25519 -f ~/.ssh/id_ed25520
+  209  mc
+  210  git remote set-url origin git@github.com:Basilevscripto/mephi-linux-security-2026.git
+  211  ssh -T git@github.com
+  212  ssh -vT git@github.com
+  213  mc
+  214  ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519
+  215  mc
+  216  ssh -T git@github.com
+  217  it remote set-url origin git@github.com:Basilevscripto/mephi-linux-security-2026.git
+  218  git remote set-url origin git@github.com:Basilevscripto/mephi-linux-security-2026.git
+  219  git remote -v
+  220  git push -u origin main
+  221  cat /etc/shadow
+  222  [200~[root@linux .ssh]# git push -u origin main
+  223  Enter passphrase for key '/root/.ssh/id_ed25519': 
+  224  Перечисление объектов: 18, готово.
+  225  Подсчет объектов: 100% (18/18), готово.
+  226  При сжатии изменений используется до 4 потоков
+  227  Сжатие объектов: 100% (16/16), готово.
+  228  Запись объектов: 100% (18/18), 191.89 KiB | 1.30 MiB/s, готово.
+  229  Total 18 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+  230  remote: Resolving deltas: 100% (2/2), done.
+  231  To github.com:Basilevscripto/mephi-linux-security-2026.git
+  232   * [new branch]      main -> main
+  233  auditctl -a exit,always -S chmod -S fchmod -S chmodat -F path=/etc/shadow
+  234  auditctl -a exit,always -S write -F path=/etc/shadow
+  235  auditctl -a exit,always -S chmod -S fchmod -S chmodat -F path=/etc/shadow
+  236  auditctl -a exit,always -S chmod -S fchmod -F path=/etc/shadow
+  237  nmcli dev status 
+  238  nmcli connection add type ethernet con-name dhcp-conn ifname enp0s3 \ ipv4.method auto
+  239  nmcli connection add type ethernet con-name dhcp-conn ifname enp0s3
+  240  ipv4.method auto
+  241  nmcli connection up dhcp-conn 
+  242  hostname set-hostname mephi-2026.domain.local
+  243  nmcli connection add type ethernet con-name dhcp-conn ifname enp0s3 +ipv4.method auto
+  244  nmcli connection up dhcp-conn 
+  245  hostname set-hostname mephi-2026.domain.local
+  246  hostnamectl set-hostname mephi-2026.domain.local
+  247  ping -c 4 8.8.8.8 > ~/ping.out
+  248  ping 8.8.8.8
+  249  dnf update -y
+  250  dnf install -y nginx libcap-ng-utils
+  251  mkdir -p /tmp/tcpdump-pkg
+  252  cd /tmp/tcpdump-pkg
+  253  dnf download tcpdump --destdir=.
+  254  rpm -ivh tcpdump-*.rpm
+  255  dnf install -y tcpdump
+  256  dnf history > ~/dnf.conf
+  257  dnf download tcpdump --destdir=. --arch=x86_64
+  258  rpm -inv tcpdump-*.x86_64.rpm
+  259  rpm -ivh tcpdump-*.x86_64.rpm
+  260  dnf history > ~/dnf.conf
+  261  exit
+  262  lsblk
+  263  fdisk /dev/sbd
+  264  fdisk /dev/sdb
+  265  reboot
+  266  lsblk
+  267  fdisk /dev/sdb
+  268  mkfs.ext4 -L MEPHI_WEB /dev/sdc1
+  269  lsblk
+  270  mkfs.ext4 -L MEPHI_WEB /dev/sdb1
+  271  lsblk -f | grep sdb1
+  272  mkdir -p /mephi-web
+  273  blkid -o value -s LABEL /dev/sdb1
+  274  LABEL=MEPHI_WEB /mephi-web ext4 defaults 0 2
+  275  /etc/fstab
+  276  mcedit /etc/fstab 
+  277  stat /mephi-web >> ~/stat.out
+  278  systemctl enable --now nginx
+  279  journalctl -u nginx -b > ~/journalctl.out
+  280  mount -a
+  281  df -h | grep /mephi-web
+  282  systemctl status nginx
+  283  groupadd -g 4444 curators
+  284  useradd -u 5501 -G curators user1
+  285  useradd -u 5501 -G curators user2
+  286  useradd -u 5501 -G curators user3
+  287  useradd -u 5502 -G curators user3
+  288  useradd -u 5503 -G curators user4
+  289  useradd -u 5504 -G curators curator1
+  290  useradd -u 5505 -G curators curator2
+  291  mkdir -p /data/mephi-2026
+  292  chown root:curators /data/mephi-2026
+  293  chmod 2770 /data/mephi-2026
+  294  stat /data/mephi-2026 > ~/stat.out
+  295  setcap cap_net_raw,cap_net_admin+eip /usr/sbin/tcpdump
+  296  getcap /usr/sbin/tcpdump > ~/getcap.out
+  297  sudo -u user1 tcpdump 
+  298  sudo -u user1 tcpdump -h
+  299  getenforce > ~/getenforce.out
+  300  semanage fcontext -a -t httpd_sys_content_t "/mephi-web(/.*)?"
+  301  restorecon -Rv /mephi-web
+  302  usermod -s /usr/sbin/nologin curator1
+  303  usermod -s /usr/sbin/nologin curator2
+  304  echo "minlen = 12" >> /etc/security/pwquality.conf
+  305  chage -M 90 user1 user2 user3 user4 curator1 curator2
+  306  getent passwd curator1 curator2 | cut -d: -f1,7
+  307  mcedit /etc/security/pwquality.conf
+  308  grep minlen /etc/security/pwquality.conf
+  309  chage -l user1
+  310  echo "Hellow from Student: M265238" > /mephi-web/index.html
+  311  curl http://localhost/ > ~/curl.out
+  312  history > ~/history.out
